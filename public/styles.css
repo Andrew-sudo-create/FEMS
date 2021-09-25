@@ -24,12 +24,9 @@ body{
 }
 
 .nav-list {
-  display: inline-block;
   font-family: 'Playfair Display', serif;
-  font-weight: 400;
   font-size: 16px;
   letter-spacing: 4px;
-  margin: 30px 0px 0px 100px;
 }
 
 .loader{
@@ -42,38 +39,27 @@ body{
 .logo{
   width: 90px;
   height: 90px;
-  position: absolute;
-  left: 30px;
 }
 .nav-bar{
   background-color: white;
-  height:100px!important;
   border-bottom: solid 0.5px;
-  z-index: 999;
-  width: 1600px;
-  top: 0;
-  position: fixed;
+  padding: 0px !important;
 }
 .line{
-  display: inline-block;
   border-right: solid 1px;
 }
 .line-last{
-  border: none;
   display: inline-block;
 }
 
 .bar{
   padding-bottom:10px;
   padding-top: 5px;
-  display: inline-block;
   margin: 0 20px 0 20px;
-  text-decoration: none;
   color:#323643;
   overflow: hidden;
   position: relative;
   padding: 0.5em 0;
-  text-decoration: none;
 }
 /* Fade in */
 .bar::after {
@@ -82,7 +68,7 @@ body{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.15em;
+  height: 0.07em;
   background-color:#93DEFF;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
@@ -101,13 +87,12 @@ body{
 }
 
 .icons{
-  display: inline-block;
-  margin-left:350px;
+  margin-left:350px !important;
 }
 .icons i{
-  font-size: 35px;
-  margin: 8px;
-  color: #323643;
+  color: #323643 !important;
+  font-size: 35px!important;
+  margin:0px 10px 0px 10px;
 }
 .info{
  background-color:rgb(247, 247, 247,0.65);
