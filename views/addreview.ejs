@@ -1,0 +1,25 @@
+<%- include("partials/header")-%>
+
+<div class="review-page">
+  <div class="new-page-content">
+    <div class="new-top">
+      <p class="new-heading">Want to Tell Us Something? Leave a review.</p>
+    </div>
+    <div class="new-body">
+      <div class="review-form">
+        <div class="review-inner">
+          <form class="review-input-fields" action="/addreview" method="post">
+            <input class="input-field" type="text" name="fNameReview" placeholder="First Name" value="" required>
+            <input class="input-field" type="text" name="lNameReview" placeholder="Last Name" value="" required>
+            <input class="input-field" type="text" name="titleNameReview" placeholder="Professional Title" value=""  />
+            <textarea class="review-textarea" name="reviewText" cols="98" rows="4" placeholder="Enter Review Here" required></textarea>
+            <button class="submit-review" type="submit" >Submit Review</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%- include("partials/footer")-%>

@@ -1,0 +1,172 @@
+<%- include("partials/header")-%>
+
+
+
+<div id="Home" class="loader">
+  <div class="info">
+    <div id="About" class="content">
+      <img class="logo-loader" src="images/FEMS.png" alt="">
+      <h1>Facility & Estate Management Solutions</h1>
+      <p>We started Facilities & Estate Management Solutions (Pty) Ltd out of a need that we recognized in the market place to make the lives of Trustee’s easier. We as owners of the business have a collective 32 years of experience in this market
+        and we know that the job of a Trustee is a thankless one, it is purely voluntary and in most instances they do not have the time they would like to spend on the affairs of the body corporate due to their family...</p>
+      <form action="/about">
+        <button class="GTA" type="submit" name="button">Learn More</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="values-box row">
+    <div class="col">
+      <div class="values">
+        <div class="values-head"><p>Facility</p></div>
+        <div class="values-body"><p>Facility Management is our passion and when passion and expertise are integrated its explosive, and only excellence can come out of this combination. </p></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="values">
+        <div class="values-head"><p>Estate</p></div>
+        <div class="values-body"><p>We excell at Estate management and your Estate needs could be placed in no better hands than those of F.E.M.S. </p></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="values">
+        <div class="values-head"><p>Management</p></div>
+        <div class="values-body"><p>Passion, experience, knowledge and service excellence are the drivers of our management team. </p></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="values">
+        <div class="values-head"><p>Solutions</p></div>
+        <div class="values-body"><p>We are the solution to your facility and estate management needs. </p></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<div id="Services" class="services">
+  <div class="container">
+    <div class="services-box">
+      <div class="container">
+      <div class="services-inner">
+        <p class="services-head">Services</p>
+        <p>We offer a vast range of services tailored to your needs as a client, we only work with the utmost care and dedication.
+          It is up to us to give a you service that you deserve and will not regret. With our experience and expertise you will recieve complete and professional co-opertation.
+          You can trust us to leave your duties as a trustee to us. If you want us to do something that is not provided please feel free to contact us.
+        </p>
+        <form action="/services">
+          <button class="GTA" type="submit" name="button">Learn More</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+   <div class="review-heading"><p>Words From People Who Trust Us.</p></div>
+  <div class="row">
+    <div class="col review">
+      <div class="review-block">
+        <div class="review-content">
+          <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis
+            aute<i class="fas fa-quote-right"></i>
+          </p>
+        </div>
+        <div class="review-info">
+          <p class="review-name">Andrew Kriegler</p>
+          <p class="review-title">CEO of Apple</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="review-block">
+        <div class="review-content">
+          <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis
+            aute<i class="fas fa-quote-right"></i></p>
+        </div>
+        <div class="review-info">
+          <p class="review-name">Andrew Kriegler</p>
+          <p class="review-title">CEO of Apple</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="review-block">
+      <div class="review-content">
+        <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis
+          aute<i class="fas fa-quote-right"></i></p>
+      </div>
+      <div class="review-info">
+        <p class="review-name">Andrew Kriegler</p>
+        <p class="review-title">Owner of Sandton</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="review-buttons">
+    <form action="/addreview">
+      <button class="btnReview" type="submit" name="button">Add Review</button>
+    </form>
+  </div>
+
+
+
+
+
+<div id="Contact" class="contact">
+  <div class="contact-container">
+    <p class="contact-head">Contact Us</p>
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p class="">Contact Information</p>
+
+        <i class="fas fa-phone"></i><span>+27 72 091 2266</span>
+        <br>
+        <i class="fas fa-envelope"></i><span>info@femsolutions.co.za</span>
+        <br>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter-square"></i>
+      </div>
+      <div class="contact-form">
+        <form class="" action="/send" method="post">
+          <div class="name">
+            <input class="input-field" type="text" name="firstName" placeholder="First Name" value="" required>
+            <input class="input-field" type="text" name="lastName" placeholder="Last Name" value="" required>
+            <input id="contactEmailValidate" onclick="validate()" class="input-field" type="email" name="eMail" placeholder="E-Mail" value="" required>
+            <input class="input-field" type="number" name="phone" placeholder="Phone" value="" required>
+          </div>
+          <div class="numbers">
+            <textarea rows="2" cols="35" name="message" placeholder="Your Message Here..." required></textarea>
+            <button class="" type="submit" name="button">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer")-%>
