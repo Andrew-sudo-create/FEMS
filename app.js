@@ -1,13 +1,16 @@
 require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
+const ejs = require("ejs");
 const request= require("request");
 const https = require("https");
 const mongoose = require("mongoose");
 const nodemailer = require('nodemailer');
 var validator = require("email-validator");
 const app = express();
-
+const starterAboutP1 = "We started Facilities & Estate Management Solutions (Pty) Ltd out of a need that we recognized in the market place to make the lives of Trustee’s easier. We as owners of the business have a collective 32 years of experience in this market and we know that the job of a Trustee is a thankless one, it is purely voluntary and in most instances they do not have the time they would like to spend on the affairs of the body corporate due to their family,"
+const starterAboutP2 = " work or other obligations. So as professional Estate & Facility managers we saw the need to provide the body corporates with a professional, pro-active & dedicated service offering, which would take the load off their shoulders and give them piece of mind, as well as being able to report back to fellow owners that their investments are in very capable hands."
+const starterAboutP3 = "During our market research we found that a good deal of the service providers in this space received mediocre reviews and it mostly revolved around dissatisfaction with service that was promised but not provided or their complaints were not satisfactorily resolved. As a future client of Facilities & Estate Management Solutions (Pty) Ltd you shall receive the service you desire and more. Our clients are one of the most important aspects of the business and it is very important to us that the service we promise, is delivered in a professional manner, with integrity while providing a reliable service based on value for money, giving you piece of mind";
 
 mongoose.connect(process.env.ATLAS_URL,{useNewUrlParser: true,useUnifiedTopology: true })
 
@@ -35,7 +38,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs")
 
 app.get("/",function(req,res){
-  res.render("home");
+  res.render("home",{starterAboutP1:starterAboutP1,
+                     starterAboutP2:starterAboutP2,
+                     starterAboutP3:starterAboutP3});
 })
 
 app.get("/about",function(req,res){
@@ -57,6 +62,7 @@ app.get("/success",function(req,res){
 app.get("/failure",function(req,res){
   res.render("failure")
 })
+
 
 app.post("/addreview",function(req,res){
 

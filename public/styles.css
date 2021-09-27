@@ -31,10 +31,8 @@ body{
 
 .loader{
   background-image: url("images/images-suggest-one.jpg");
-  width: 1600px;
-  height: 789px;
   color: #323643;
-  padding-top: 200px;
+  padding: 200px 0px 100px 0px;
 }
 .logo{
   width: 90px;
@@ -96,30 +94,27 @@ body{
 }
 .info{
  background-color:rgb(247, 247, 247,0.65);
- width: 700px;
- height: 500px;
- margin-left: 100px ;
- padding: 50px;
+ padding-bottom: 50px;
 }
+
 .content{
-  width: 570px;
-  height: 350px;
   font-family: 'Playfair Display', serif;
   color: #606470;
 }
 .content p{
 margin-top: 20px;
+padding: 0px 50px 0 50px;
+color: #606470;
 }
 .content h1{
   font-family: 'Bebas Neue', cursive;
   color: #323643;
   letter-spacing: 5px;
   font-size: 30px;
-  width: 320px;
   border-bottom-style:solid;
   border-bottom-width: 2px;
   border-bottom-color:#323643;
-  padding-bottom: 20px;
+  padding: 40px 0 20px 0;
 }
 
 .content-head{
@@ -132,12 +127,16 @@ margin-top: 20px;
  display: inline-block;
  color: #323643;
 }
-
+.about3{
+  margin-bottom: 0;
+}
+.button-form{
+  text-align: center;
+}
 .GTA{
   border: none;
   background-color: #93DEFF;
   padding: 10px 20px 10px 20px;
-  margin-left: 255px;
   margin-top: 20px;
   font-weight: 700;
   color: #323643;
@@ -668,53 +667,25 @@ padding: 125px 50px 50px 50px;
   padding: 125px 50px 50px 50px;
   text-align: center;
 }
+.dots{
+  display: none;
+}
+@media only screen and (max-width: 1424px) {
+  .about3{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
 
+  .logo-loader{
+    display: none;
+  }
+}
 @media only screen and (max-width: 800px) {
-  .values-box{
-    text-align: center;
+  .about2{
+    display: none;
   }
-
-  .review-buttons{
-    margin-left:100px;
+  .dots{
+    display: initial;
   }
-  .review-heading{
-    font-size: 60px;
-    width: 350px;
-    margin-left: 50px;
-  }
-  .review-block{
-    margin-left:10px;
-  }
-  .info{
-   width: 450px;
-   height: 580px;
-   margin-left: 20px;
-   padding: 0;
-  }
-  .content{
-    width: 400px;
-    height: 400px;
-    font-family: 'Playfair Display', serif;
-    color: #606470;
-  }
-  .content p{
-  margin-top: 0px;
-  padding: 20px 20px 0px 40px;
-  margin-bottom: 0px;
-  }
-  .content h1{
-    letter-spacing: 5px;
-    font-size: 30px;
-    width: 150px;
-    margin-top: 10px;
-  }
-  .GTA{
-    padding: 10px 20px 10px 20px;
-    margin-left: 150px;
-    margin-top: 0px;
-  }
-  .loader{
-    padding-top: 150px;
-  }
-
 }
