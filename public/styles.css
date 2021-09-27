@@ -85,7 +85,7 @@ body{
 }
 
 .icons{
-  margin-left:350px !important;
+  float: right!important;
 }
 .icons i{
   color: #323643 !important;
@@ -104,28 +104,19 @@ body{
 .content p{
 margin-top: 20px;
 padding: 0px 50px 0 50px;
-color: #606470;
-}
-.content h1{
-  font-family: 'Bebas Neue', cursive;
-  color: #323643;
-  letter-spacing: 5px;
-  font-size: 30px;
-  border-bottom-style:solid;
-  border-bottom-width: 2px;
-  border-bottom-color:#323643;
-  padding: 40px 0 20px 0;
+
 }
 
 .content-head{
-  border-right: solid 2px;
-  width: 350px;
-  display: inline-block;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
   color: #323643;
-}
-.content-head-two{
- display: inline-block;
- color: #323643;
+  letter-spacing: 5px;
+  font-size: 60px;
+  border-bottom-style:solid;
+  border-bottom-width: 2px;
+  border-bottom-color:#323643;
+  padding: 20px 0 0 0;
 }
 .about3{
   margin-bottom: 0;
@@ -156,8 +147,10 @@ color: #606470;
   text-align: left;
   padding: 50px;
   margin: 50px 25px 50px 25px;
-
   display: inline-block;
+}
+.values-box{
+  text-align: center;
 }
 .values-head{
   font-family: 'Bebas Neue', cursive;
@@ -178,37 +171,12 @@ color: #606470;
 
 .services{
   background-image: url("images/buildings.jpg");
-  width: 1600px;
-  height: 500px;
   background-position: center;
-  padding: 50px 0 50px 700px;;
+  padding: 50px 0 50px 0;
 }
 .services-box{
-  width: 800px;
-  height: 400px;
   background-color:rgb(247, 247, 247,0.65);
-  padding: 10px 0 0 50px;
-}
-.services-head{
-  color:#323643;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 70px;
-  padding: 0 50px 0 0;
-  width: 660px;
-  border-bottom-style:solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #606470;
-  letter-spacing: 7px;
-  margin-bottom: 20px;
-}
-.services-inner{
-  width: 600px;
-  padding: 20px;
-  font-family: 'Playfair Display', serif;
-  color: #606470;
-}
-.services-inner p{
-  width: 660px;
+  padding-bottom: 50px;
 }
 
 .contact{
