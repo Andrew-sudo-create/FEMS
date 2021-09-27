@@ -134,10 +134,32 @@
   </form>
 </div>
 
+<div id="Contact" class="contact container-fluid">
+  <div class="contact-container container">
+    <div class="content-head container">
+      <p>Contact Us</p>
+    </div>
+    <div class="contact-inner container">
+      <div class="contact-info container">
+        <i class="fas fa-phone"></i><span>+27 72 091 2266</span>
+        <i class="fas fa-envelope"></i><span>info@femsolutions.co.za</span>
+      </div>
+          <div class="contact-form container">
+            <form class="" action="/send" method="post">
+            <input class="input-field" type="text" name="firstName" placeholder="First Name" value="" required>
+            <input class="input-field" type="text" name="lastName" placeholder="Last Name" value="" required>
+            <input id="contactEmailValidate" onclick="validate()" class="input-field" type="email" name="eMail" placeholder="E-Mail" value="" required>
+            <input class="input-field" type="number" name="phone" placeholder="Phone" value="" required>
+            <div class="textarea-container container"><textarea class="contact-textarea" rows="2" cols="80"  name="message" placeholder="Your Message Here..." required></textarea></div>
+            <div class="button-form"><button class="GTA" type="submit" name="button">Send Message</button></div>
+            </form>
+          </div>
+    </div>
+  </div>
+</div>
 
 
-
-<div id="Contact" class="contact">
+<!-- <div id="Contact" class="contact">
   <div class="contact-container">
     <p class="contact-head">Contact Us</p>
     <div class="contact-inner">
@@ -163,12 +185,12 @@
           </div>
           <div class="numbers">
             <textarea rows="2" cols="35" name="message" placeholder="Your Message Here..." required></textarea>
-            <button class="" type="submit" name="button">Send Message</button>
+
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <%- include("partials/footer")-%>
