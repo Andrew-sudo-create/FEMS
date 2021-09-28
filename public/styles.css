@@ -6,7 +6,23 @@
 /* font-family: 'Source Sans Pro', sans-serif; */
 
 /* Home Page */
+body {
+          animation: fadeInAnimation ease 3s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
 
+html{
+  scroll-behavior: smooth;
+}
 a{
   text-decoration: none;
 }
@@ -393,15 +409,11 @@ font-size: 25px;
 
 .about-page{
 background-image: url("images/about.jpg");
-width: 1600px;
-height: 789px;
 padding: 125px 50px 50px 50px;
-
 }
 .new-page-content{
   background-color:rgb(247, 247, 247,0.65);
-  width: 1500px;
-  height: 650px;
+  text-align: center;
 }
 .new-heading{
   font-family: 'Bebas Neue', cursive;
@@ -412,37 +424,22 @@ padding: 125px 50px 50px 50px;
   border-bottom-style:solid;
   border-bottom-width: 2px;
   border-bottom-color: #323643;
-  width: 1100px;
-  margin: 20px 100px 0px 80px;
+
 }
 .new-top{
+  padding-top: 20px;
   text-align: center;
 }
 
 .new-body{
   font-family: 'Playfair Display', serif;
   color: #606470;
-  padding: 60px 90px 90px 90px;
-}
-.home-button{
-  border: none;
-  background-color: #93DEFF;
-  padding: 10px 20px 10px 20px;
-  font-weight: 700;
-  color: #323643;
-  font-family: 'Playfair Display', serif;
-  margin: 30px 0px 30px 600px;
-  font-size: 20px;
-}
-.home-button:hover{
-  background-color: #606470;
-  color: #F7F7F7;
+  padding: 60px 90px 20px 90px;
+  text-align: left;
 }
 
 .services-page{
   background-image: url("images/services.jpg");
-  width: 1600px;
-  height: 789px;
   padding: 125px 50px 50px 50px;
 }
 .service-list{
@@ -463,68 +460,48 @@ padding: 125px 50px 50px 50px;
 }
 .review-page{
   background-image: url("images/review.jpg");
-  width: 1600px;
-  height: 789px;
   padding: 125px 50px 50px 50px;
 }
 .review-form{
   background-color:#606470;
-  width: 1300px;
-  height: 450px;
-  padding: 50px 0px 50px 140px;
+  padding: 50px 0px 50px 0px;
 }
 .review-inner{
-  width: 1000px;
-  height: 350px;
+  text-align: center;
   background-color:rgb(247, 247, 247,0.65);
+  padding: 30px;
 }
 .review-textarea{
-  margin: 50px 20px 0px 90px;
   background: none;
   padding: 10px;
   border: solid 1px #606470;
   outline: none;
+  margin-top: 20px;
   font-family: 'Playfair Display', serif;
   color: #323643;
+  width: 100%;
 }
-.submit-review{
-  border: none;
-  background-color: #93DEFF;
-  padding: 10px 20px 10px 20px;
-  font-weight: 700;
-  color: #323643;
-  font-family: 'Playfair Display', serif;
-  margin: 10px 0px 30px 430px;
-  font-size: 19px;
-}
-.submit-review:hover{
-  background-color: #606470;
-  color: #F7F7F7;
-}
+
 .success-page{
   background-image: url("images/success.jpg");
-  width: 1600px;
-  height: 789px;
   padding: 125px 50px 50px 50px;
   text-align: center;
 }
 .render-heading{
   font-family: 'Bebas Neue', cursive;
   color: #323643;
-  font-size: 200px;
+  font-size: 130px;
   letter-spacing: 7px;
-  padding: 100px 100px 0px 100px;
+  padding: 50px;
 }
 .render-content{
   font-family: 'Playfair Display', serif;
   color: #323643;
   font-size: 60px;
-  padding: 50px 100px 0px 100px;
+  padding: 50px;
 }
 .failure-page{
   background-image: url("images/failure.jpg");
-  width: 1600px;
-  height: 789px;
   padding: 125px 50px 50px 50px;
   text-align: center;
 }
