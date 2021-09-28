@@ -287,12 +287,10 @@ padding: 5px 0 5px 0;
 
 
 .footer{
-  height: 430px;
   background: #606470;
   margin-top: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 1600px;
+  text-align: center;
+  padding: 10px;
 }
 
 .logo-loader{
@@ -304,45 +302,23 @@ padding: 5px 0 5px 0;
 .logo-footer{
   width: 250px;
   height:274.25px;
-  float: right;
-  margin-top: 50px;
-  margin-right: 20px;
 }
-.footer h1{
-  font-family: 'Bebas Neue', cursive;
-  color: #323643;
-  letter-spacing: 8px;
-  font-size: 40px;
-  width: 1150px;
-  margin-left: 60px;
-  margin-top: 40px;
-  padding-bottom: 20px;
-  border-bottom-style:solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #323643;
-}
+
 .footer-members-1{
   width: 150px;
   height:90.5px;
-  margin-top: 30px;
 }
 .footer-members-2{
  width: 375px;
- display: block;
- margin-top: 20px;
 }
 .footer-members{
-  display: inline-block;
-  position: relative;
-  bottom: 115px;
- margin-left: 60px;
+display: inline-block;
 }
 
 .footer-locations{
   display: inline-block;
   font-family: 'Playfair Display', serif;
   color: #323643;
-  margin-left: 60px;
 }
 .locations-1{
   display: inline-block;
@@ -350,15 +326,12 @@ padding: 5px 0 5px 0;
 }
 .locations-2{
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .footer-contact{
   display: inline-block;
-    font-family: 'Playfair Display', serif;
-    color: #323643;
-    position: relative;
-    bottom: 120px;
-    margin-left: 60px;
+  font-family: 'Playfair Display', serif;
+  color: #323643;
 }
 .footer-headings{
   font-family: 'Bebas Neue', cursive;
@@ -371,9 +344,6 @@ padding: 5px 0 5px 0;
 }
 .footer-links{
   display: inline-block;
-  position: relative;
-  bottom: 104px;
-  margin-left: 60px;
 }
 
 .fa-quote-left{
@@ -482,7 +452,6 @@ padding: 125px 50px 50px 50px;
 .copyright{
   color: #323643;
   font-family: 'Playfair Display', serif;
-  margin-left: 400px;
 }
 .andrew-email{
   text-decoration: none;
