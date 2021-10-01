@@ -127,7 +127,7 @@ const nodemailer = require("nodemailer");
   // send mail with defined transport object
   let mailOptions = {
     from: '"Website" <webdev@femsolutions.co.za>', // sender address
-    to: "andrewkwebdeveloper@gmail.com", // list of receivers
+    to: "info@femsolutions.co.za", // list of receivers
     subject: "Contact Request From Website", // Subject line
     text: "Contact", // plain text body
     html: output // html body
@@ -137,7 +137,6 @@ const nodemailer = require("nodemailer");
     if(error){
       return console.log(error);
     }
-      console.log("meassage sent: %s",info.messageId);
   })
 
 
@@ -186,7 +185,6 @@ const nodemailer = require("nodemailer");
   })
 })
 
-
 app.listen(3000,function(){
-  console.log("server is running on port 3000");
+
 })

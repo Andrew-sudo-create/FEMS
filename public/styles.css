@@ -377,10 +377,10 @@ font-size: 25px;
 
 .review-block{
   background-color: #606470;
-  width: 465px;
-  height:270px;
-  padding: 40px;
-  margin: 20px 0px 20px 20px;
+  width: 485px;
+  height:290px;
+  padding: 25px;
+  margin: 20px 0px 20px 0px;
   display: inline-block;
   text-align: left;
 }
@@ -392,6 +392,7 @@ font-size: 25px;
 .review-content{
   font-family: 'Playfair Display', serif;
   color: #323643;
+  height: 285px;
 }
 .review-name{
   font-family: 'Bebas Neue', cursive;
