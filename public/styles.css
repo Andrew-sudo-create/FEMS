@@ -109,7 +109,7 @@ body{
   margin:0px 10px 0px 10px;
 }
 .info{
- background-color:rgb(247, 247, 247,0.65);
+ background-color:rgba(247, 247, 247,0.85);
  padding-bottom: 50px;
 }
 
@@ -162,7 +162,7 @@ padding: 0px 50px 0 50px;
   height: 400px;
   text-align: left;
   padding: 50px;
-  margin: 50px 25px 50px 25px;
+  margin: 50px 0 50px 0;
   display: inline-block;
 }
 .values-box{
@@ -193,7 +193,7 @@ padding: 0px 50px 0 50px;
   padding: 50px 0 50px 0;
 }
 .services-box{
-  background-color:rgb(247, 247, 247,0.65);
+  background-color:rgba(247, 247, 247,0.85);
   padding-bottom: 50px;
 }
 
@@ -203,7 +203,7 @@ padding: 0px 50px 0 50px;
   padding: 50px;
 }
 .contact-container{
-   background-color:rgb(247, 247, 247,0.65);
+   background-color:rgba(247, 247, 247,0.85);
    padding: 20px;
 }
 
@@ -275,7 +275,7 @@ padding: 0px 50px 0 50px;
 }
 .contact-form{
   margin-top: 50px;
-  background-color:rgb(247, 247, 247,0.65);
+  background-color:rgba(247, 247, 247,0.85);
   text-align: center;
   padding: 0 0 40px 0;
 }
@@ -377,8 +377,7 @@ font-size: 25px;
 
 .review-block{
   background-color: #606470;
-  width: 485px;
-  height:290px;
+  height: 97%;
   padding: 25px;
   margin: 20px 0px 20px 0px;
   display: inline-block;
@@ -387,6 +386,7 @@ font-size: 25px;
 
 .review{
   text-align: center;
+  height:100%;
 }
 
 .review-content{
@@ -412,8 +412,21 @@ font-size: 25px;
 background-image: url("images/about.jpg");
 padding: 125px 50px 50px 50px;
 }
+.privacy-page{
+ background-image: url("images/privacy.jpg");
+ padding: 125px 50px 50px 50px;
+}
+.privacy-headings{
+  color: #323643;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+.terms-page{
+  background-image: url("images/terms.jpg");
+  padding: 125px 50px 50px 50px;
+}
 .new-page-content{
-  background-color:rgb(247, 247, 247,0.65);
+  background-color:rgba(247, 247, 247,0.85);
   text-align: center;
 }
 .new-heading{
@@ -435,7 +448,7 @@ padding: 125px 50px 50px 50px;
 .new-body{
   font-family: 'Playfair Display', serif;
   color: #606470;
-  padding: 60px 90px 20px 90px;
+  padding: 30px 45px 10px 45px;
   text-align: left;
 }
 
@@ -469,7 +482,7 @@ padding: 125px 50px 50px 50px;
 }
 .review-inner{
   text-align: center;
-  background-color:rgb(247, 247, 247,0.65);
+  background-color:rgba(247, 247, 247,0.85);
   padding: 30px;
 }
 .review-textarea{

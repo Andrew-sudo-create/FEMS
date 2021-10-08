@@ -62,6 +62,12 @@ app.get("/success",function(req,res){
 app.get("/failure",function(req,res){
   res.render("failure")
 })
+app.get("/privacy",function(req,res){
+  res.render("privacy")
+})
+app.get("/TsandCs",function(req,res){
+  res.render("TsandCs")
+})
 
 
 app.post("/addreview",function(req,res){
