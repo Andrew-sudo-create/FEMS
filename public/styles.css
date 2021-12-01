@@ -522,6 +522,13 @@ padding: 125px 50px 50px 50px;
 .dots{
   display: none;
 }
+
+.recaptcha-box{
+  text-align: center;
+}
+.g-recaptcha{
+  display: inline-block;
+}
 @media only screen and (max-width: 1424px) {
   .about3{
     display: none;

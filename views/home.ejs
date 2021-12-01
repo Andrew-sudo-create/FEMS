@@ -134,18 +134,47 @@
         <i class="fas fa-envelope"></i><span>info@femsolutions.co.za</span>
       </div>
           <div class="contact-form container">
-            <form class="" action="/send" method="post">
-            <input class="input-field" type="text" name="firstName" placeholder="First Name" value="" required>
-            <input class="input-field" type="text" name="lastName" placeholder="Last Name" value="" required>
-            <input id="contactEmailValidate" onclick="validate()" class="input-field" type="email" name="eMail" placeholder="E-Mail" value="" required>
+            <form class="" action="/send" method="post" id="contactForm">
+            <input class="input-field" type="text" name="firstName" id="fName" placeholder="First Name" value="" required>
+            <input class="input-field" type="text" name="lastName" id="lName" placeholder="Last Name" value="" required>
+            <input id="contactEmailValidate" onclick="validate()" id="eMail" class="input-field" type="email" name="eMail" placeholder="E-Mail" value="" required>
             <input class="input-field" type="number" name="phone" placeholder="Phone" value="" required>
             <div class="textarea-container container"><textarea class="contact-textarea" rows="2" cols="80"  name="message" placeholder="Your Message Here..." required></textarea></div>
+            <div class="recaptcha-box">
+              <div class="g-recaptcha" data-sitekey="6LdtM28dAAAAAA9QGr0BZZRUMnmlFQ48Ulre36kq"></div>
+            </div>
             <div class="button-form"><button class="GTA" type="submit" name="button">Send Message</button></div>
+
             </form>
           </div>
     </div>
   </div>
 </div>
 
+<script>
+  document.getElementById('contactForm').addEventListener('submit',submitForm);
+
+  function submitForm(e){
+    e.preventDefault();
+    const fName = document.querySelector('#fName');
+    const lName = document.querySelector('#lName'');
+    const email = document.querySelector('#eMail');
+    const captcha = document.querySelector('#g-recaptcha-response').value;
+
+    fetch('/send',{
+      method : 'POST',
+      headers:{
+        'Accept':'application/json , text/plain , */*',
+        'Content-type':'application/json'
+      },
+      body:JSON.stringify({fName:fName, lName:lName, email:email, captcha:captcha})
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      alert(data.msg);
+    })
+  }
+</script>
 
 <%- include("partials/footer")-%>
