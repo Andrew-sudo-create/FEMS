@@ -192,8 +192,7 @@ const nodemailer = require("nodemailer");
   //   }
   // })
 
-//Site key 6Lc33W0dAAAAAKzx1Msi-pThYBWfs17519o5F2Dk
-//Secret Key 6Lc33W0dAAAAAF-eMW5iOEtQnZHQQ2Qm3M41BrMs
+
 
 const name = req.body.name;
 // getting site key from client side
@@ -216,6 +215,7 @@ fetch(captchaUrl, {
     // google as a response
     if (google_response.success == true) {
       //   if captcha is verified
+
       newContact.save();
       return res.redirect("/success")
     } else {
@@ -237,6 +237,4 @@ fetch(captchaUrl, {
 
 
 
-app.listen(3000,function(){
-  console.log("Server is running on port 3000");
-})
+app.listen(3000,function(){})
