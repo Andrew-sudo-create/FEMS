@@ -1,0 +1,23 @@
+.footer{
+  margin-top: 5rem;
+  background-color: var(--color-secondary-text);
+
+  padding: 3rem;
+
+  &__logo{
+    width: 25rem;
+    height: auto;
+  }
+  &__img{
+    width: 20rem;
+    height: auto;
+  }
+  &__list{
+    list-style: none;
+  }
+  &__heading{
+    margin-bottom: 2rem;
+  }
+
+
+}

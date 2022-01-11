@@ -1,10 +1,19 @@
 <%- include("partials/header")-%>
 
-<div class="success-page container-fluid">
-  <div class="new-page-content container">
-      <div class="render-heading container"><p>Success!</p></div>
-      <p class="render-content">We have recieved your message.</p>
+<header class="header header--about">
+  <div class="header__content">
+    <div class="header__text-box">
+      <div class="header__box">
+      <h1 class="heading-primary u-margin-bottom-medium">
+        Success!
+      </h1>
+      </div>
+      <p class="text-primary">We have recieved your message!</p>
+    </div>
+    <form action="/" class="button">
+      <button class="button__btn" type="submit" name="button">Home</button>
+    </form>
   </div>
-</div>
+</header>
 
 <%- include("partials/footer")-%>

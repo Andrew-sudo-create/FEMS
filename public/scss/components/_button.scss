@@ -1,0 +1,22 @@
+.button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+
+  &__btn{
+
+      background-color: var(--color-blue);
+      border: none;
+      padding: 1rem 2rem;
+      transition: all .5s;
+
+      &:hover{
+        background-color: var(--color-secondary-text);
+        color: var(--color-white);
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        cursor: pointer;
+      }
+    }
+  }

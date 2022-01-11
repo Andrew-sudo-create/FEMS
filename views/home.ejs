@@ -1,180 +1,187 @@
 <%- include("partials/header")-%>
 
-
-<div class="loader container-fluid">
-  <div class="info container">
-    <div class="content container ">
-      <img class="logo-loader" src="images/FEMS.png" alt="">
-      <h1 class="content-head">Facility & Estate Management Solutions</h1>
-      <p><%=starterAboutP1 %><span class="dots"> ...</span><span class="about2"><%=starterAboutP2 %></span></p>
-      <p class="about3"><%=starterAboutP3 %>...</p>
-      <form action="/about" class="button-form">
-        <button class="GTA" type="submit" name="button">Learn More</button>
-      </form>
+<header class="header">
+  <div class="header__content">
+    <div class="header__logo-box">
+      <img class="header__logo" src="images/FEMS.png" alt="">
     </div>
+    <div class="header__text-box">
+      <h1 class="heading-primary u-margin-bottom-medium">
+        Facility & Estate Management Solutions
+      </h1>
+      <p class="text-primary">
+        We started Facilities & Estate Management Solutions (Pty) Ltd out of a need that we recognized in the market place to make the lives of Trustee’s easier. We as owners of the business have a collective 32 years of experience in this market and
+        we know that the job of a Trustee is a thankless one, it is purely voluntary and in most instances they do not have the time they would like to spend on the affairs of the body corporate due to their family,
+        work or other obligations. So as professional Estate & Facility managers we saw the need to provide the body corporates with a professional, pro-active & dedicated service offering, which would take the load off their shoulders and give them
+        piece of mind, as well as being able to report back to fellow owners that their investments are in very capable hands.
+      </p>
+      <br>
+      <p class="text-primary">During our market research we found that a good deal of the service providers in this space received mediocre reviews and it mostly revolved around dissatisfaction with service that was promised but not provided or their
+        complaints were not satisfactorily resolved. As a future client of Facilities & Estate Management Solutions (Pty) Ltd you shall receive the service you desire and more. Our clients are one of the most important aspects of the business and it
+        is very important to us that the service we promise, is delivered in a professional manner, with integrity while providing a reliable service based on value for money, giving you piece of mind.
+      </p>
+    </div>
+    <form action="/about" class="button">
+      <button class="button__btn" type="submit" name="button">Learn More</button>
+    </form>
   </div>
-</div>
+</header>
 
-<div class="values-box container-fluid">
-  <div class="content-head container">
-    <p>What We Stand For.</p>
-  </div>
-  <div class=" row">
-    <div class="col">
-      <div class="values">
-        <div class="values-head">
-          <p>Facility</p>
-        </div>
-        <div class="values-body">
-          <p>Facility Management is our passion and when passion and expertise are integrated its explosive, and only excellence can come out of this combination. </p>
-        </div>
-      </div>
+<main>
+  <section class="values">
+    <h1 class="values__heading heading-primary">What We Stand For.</h1>
+    <div class="values__card values__card--1">
+      <h2 class="values__secondary-heading heading-secondary">
+        Facility
+      </h2>
+      <p class="text-primary text-primary--dark">
+        Facility Management is our passion and when passion and expertise are integrated its explosive, and only excellence can come out of this combination.
+      </p>
     </div>
-    <div class="col">
-      <div class="values">
-        <div class="values-head">
-          <p>Estate</p>
-        </div>
-        <div class="values-body">
-          <p>We excell at Estate management and your Estate needs could be placed in no better hands than those of F.E.M.S. </p>
-        </div>
-      </div>
+    <div class="values__card values__card--2">
+      <h2 class="values__secondary-heading heading-secondary">
+        Estate
+      </h2>
+      <p class="text-primary text-primary--dark">
+        We excell at Estate management and your Estate needs could be placed in no better hands than those of F.E.M.S.
+      </p>
     </div>
-    <div class="col">
-      <div class="values">
-        <div class="values-head">
-          <p>Management</p>
-        </div>
-        <div class="values-body">
-          <p>Passion, experience, knowledge and service excellence are the drivers of our management team. </p>
-        </div>
-      </div>
+    <div class="values__card values__card--3">
+      <h2 class="values__secondary-heading heading-secondary">
+        Management
+      </h2>
+      <p class="text-primary text-primary--dark">
+        Passion, experience, knowledge and service excellence are the drivers of our management team.
+      </p>
     </div>
-    <div class="col">
-      <div class="values">
-        <div class="values-head">
-          <p>Solutions</p>
-        </div>
-        <div class="values-body">
-          <p>We are the solution to your facility and estate management needs. </p>
-        </div>
-      </div>
+    <div class="values__card values__card--4">
+      <h2 class="values__secondary-heading heading-secondary">
+        Solutions
+      </h2>
+      <p class="text-primary text-primary--dark">
+        We are the solution to your facility and estate management needs.
+      </p>
     </div>
-  </div>
-</div>
+  </section>
 
-<div class="services container-fluid">
-  <div class="services-box container">
-    <div class="content container">
-      <div class="content-head container">
-        <p>Services</p>
+  <section class="services">
+    <div class="services__content">
+      <div class="services__heading-box">
+        <h1 class="heading-primary u-margin-bottom-medium">
+          Services
+        </h1>
       </div>
-      <p>We offer a vast range of services tailored to your needs as a client, we only work with the utmost care and dedication.
+      <p class="text-primary">
+        We offer a vast range of services tailored to your needs as a client, we only work with the utmost care and dedication.
         It is up to us to give a you service that you deserve and will not regret. With our experience and expertise you will recieve complete and professional co-opertation.
         You can trust us to leave your duties as a trustee to us. If you want us to do something that is not provided please feel free to contact us.
       </p>
-      <form action="/services" class="button-form">
-        <button class="GTA" type="submit" name="button">Learn More</button>
+      <form action="/services" class="button">
+        <button class="button__btn" type="submit" name="button">Learn More</button>
       </form>
     </div>
-  </div>
-</div>
+  </section>
 
-<div id="Reviews" class="review container-fluid">
-  <div class="content-head container">
-    <p>Words From People Who Trust Us.</p>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="review-block">
-        <div class="review-content">
-          <p><i class="fas fa-quote-left"></i>A major influence on the fluency of the job, was Will.
+  <section class="review" id="review">
+    <div class="review__grid">
+      <div class="review__heading heading-primary">
+        Words From People Who Trust Us
+      </div>
+      <div class="review__card">
+        <div class="review__card-side review__card-side--front">
+          <div class="review__details">
+            <svg class="review__icon review__icon--left">
+              <use xlink:href="../images/sprite.svg#icon-quotes-left"></use>
+            </svg>
+            <p class="text-primary text-primary--dark">
+              A major influence on the fluency of the job, was Will.
               Without a doubt his expertise and keen eye for detail and intimate knowledge of the building, played a major role in assisting Pivot to identify and rectify any snags that occurred.
-              His communication with the foreman, as well as ourselves was highly valued. We are of the opinion that Will is an asset to the operational efficiency of the building as well as the Body Corporate.<i class="fas fa-quote-right"></i></p>
-          <div class="review-info">
-            <p class="review-name">Kamekho Consulting</p>
+              His communication with the foreman, as well as ourselves was highly valued. We are of the opinion that Will is an asset to the operational efficiency of the building as well as the Body Corporate.
+            </p>
+            <svg class="review__icon review__icon--right">
+              <use xlink:href="../images/sprite.svg#icon-quotes-right"></use>
+            </svg>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="review-block ">
-        <div class="review-content">
-          <p><i class="fas fa-quote-left"></i>Having worked with the guys from Facilities & Estate management Solutions, I was impressed with their Estate Management service and the knowledge they applied in running our Body Corporate, I can most certainly recommend their services if you have a need for an Estate Manager<i class="fas fa-quote-right"></i></p>
-            <div class="review-info">
-              <p class="review-name">Mike V</p>
-            </div>
+        <div class="review__card-side review__card-side--back">
+          <h2 class="heading-secondary">
+            Kamekho Consulting
+          </h2>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="review-block">
-        <div class="review-content">
-          <p><i class="fas fa-quote-left"></i>Facilities & Estate management Solutions is the most valuable business resource we have EVER purchased, the way they handled the Body Corporate and the way the worked with such efficiency was great and saved a lot of time and money for our facility.<i class="fas fa-quote-right"></i></p>
-            <div class="review-info">
-              <p class="review-name">Madelein</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <form action="/addreview" class="button-form">
-    <button class="GTA" type="submit" name="button">Add Review</button>
-  </form>
-</div>
 
-<div id="Contact" class="contact container-fluid">
-  <div class="contact-container container">
-    <div class="content-head container">
-      <p>Contact Us</p>
-    </div>
-    <div class="contact-inner container">
-      <div class="contact-info container">
-        <i class="fas fa-phone"></i><span>+27 72 091 2266-Will Walis(Director)</span>
-        <i class="fas fa-envelope"></i><span>info@femsolutions.co.za</span>
-      </div>
-          <div class="contact-form container">
-            <form class="" action="/send" method="post" id="contactForm">
-            <input class="input-field" type="text" name="firstName" id="fName" placeholder="First Name" value="" required>
-            <input class="input-field" type="text" name="lastName" id="lName" placeholder="Last Name" value="" required>
-            <input id="contactEmailValidate" onclick="validate()" id="eMail" class="input-field" type="email" name="eMail" placeholder="E-Mail" value="" required>
-            <input class="input-field" type="number" name="phone" placeholder="Phone" value="" required>
-            <div class="textarea-container container"><textarea class="contact-textarea" rows="2" cols="80"  name="message" placeholder="Your Message Here..." required></textarea></div>
-            <div class="recaptcha-box">
-              <div class="g-recaptcha" data-sitekey="6LdtM28dAAAAAA9QGr0BZZRUMnmlFQ48Ulre36kq"></div>
-            </div>
-            <div class="button-form"><button class="GTA" type="submit" name="button">Send Message</button></div>
-
-            </form>
+      <div class="review__card">
+        <div class="review__card-side review__card-side--front">
+          <div class="review__details">
+            <svg class="review__icon review__icon--left">
+              <use xlink:href="../images/sprite.svg#icon-quotes-left"></use>
+            </svg>
+            <p class="text-primary text-primary--dark">
+              Having worked with the guys from Facilities & Estate management Solutions, I was impressed with their Estate Management service and the knowledge they applied in running our Body Corporate, I can most certainly recommend their services
+              if you have a need for an Estate Manager
+            </p>
+            <svg class="review__icon review__icon--right">
+              <use xlink:href="../images/sprite.svg#icon-quotes-right"></use>
+            </svg>
           </div>
+        </div>
+        <div class="review__card-side review__card-side--back">
+          <h2 class="heading-secondary">
+            Mike V
+          </h2>
+        </div>
+      </div>
+
+      <div class="review__card review__card--3">
+        <div class="review__card-side review__card-side--front">
+          <div class="review__details">
+            <svg class="review__icon review__icon--left">
+              <use xlink:href="../images/sprite.svg#icon-quotes-left"></use>
+            </svg>
+            <p class="text-primary text-primary--dark">
+              Facilities & Estate management Solutions is the most valuable business resource we have EVER purchased, the way they handled the Body Corporate and the way the worked with such efficiency was great and saved a lot of time and money for
+              our facility
+            </p>
+            <svg class="review__icon review__icon--right">
+              <use xlink:href="../images/sprite.svg#icon-quotes-right"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="review__card-side review__card-side--back">
+          <h2 class="heading-secondary">
+            Madelein
+          </h2>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
+    <form action="/addreview" class="button">
+      <button class="button__btn u-margin-bottom-medium" type="submit" name="button">Add Review</button>
+    </form>
+  </section>
 
-<script>
-  document.getElementById('contactForm').addEventListener('submit',submitForm);
+  <section id="contact" class="contact">
+    <div class="contact__content">
+<form method="post" action="send" class="contact__form">
+        <div class="contact__heading-box">
+          <h1 class="heading-primary">
+            Contact Us
+          </h1>
+        </div>
+        <div class="contact__details">
+          <i class="fas fa-phone"></i><span>+27 72 091 2266-Will Walis(Director) &nbsp;</span>
+          <i class="fas fa-envelope"></i><span>info@femsolutions.co.za</span>
+        </div>
 
-  function submitForm(e){
-    e.preventDefault();
-    const fName = document.querySelector('#fName');
-    const lName = document.querySelector('#lName'');
-    const email = document.querySelector('#eMail');
-    const captcha = document.querySelector('#g-recaptcha-response').value;
-
-    fetch('/send',{
-      method : 'POST',
-      headers:{
-        'Accept':'application/json , text/plain , */*',
-        'Content-type':'application/json'
-      },
-      body:JSON.stringify({fName:fName, lName:lName, email:email, captcha:captcha})
-    })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      alert(data.msg);
-    })
-  }
-</script>
+        <input name="firstName" id="fName" placeholder="First Name" type="text" class="contact__input contact__input--1" required>
+        <input name="lastName" id="lName" placeholder="Last Name" type="text" class="contact__input contact__input--2" required>
+        <input name="eMail" id="eMail" placeholder="E-Mail" type="text" class="contact__input contact__input--3" required>
+        <input type="number" name="phone" placeholder="Phone" class="contact__input contact__input--4" required>
+        <textarea name="message" placeholder="Your Message Here..." class="contact__input" cols="30" rows="10" class="contact__message" required></textarea>
+        <button class="button__btn" type="submit" name="button">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
 
 <%- include("partials/footer")-%>

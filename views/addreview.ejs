@@ -1,25 +1,25 @@
 <%- include("partials/header")-%>
 
-<div class="review-page container-fluid">
-  <div class="new-page-content container">
-    <div class="new-top">
-      <p class="new-heading">Want to Tell Us Something? Leave a review.</p>
-    </div>
-    <div class="new-body container">
-      <div class="review-form container">
-        <div class="review-inner container">
-          <form class="review-input-fields container" action="/addreview" method="post">
-            <input class="input-field" type="text" name="fNameReview" placeholder="First Name" value="" required>
-            <input class="input-field" type="text" name="lNameReview" placeholder="Last Name" value="" required>
-            <input class="input-field" type="text" name="titleNameReview" placeholder="Professional Title" value=""  />
-            <textarea class="review-textarea" name="reviewText" rows="2" placeholder="Enter Review Here" required></textarea>
-            <div class="button-form"><button class="GTA" type="submit" >Submit Review</button></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+<header class="header header--review">
+  <div class="header__content">
+    <div class="header__text-box">
+      <div class="header__box">
+      <h1 class="heading-primary u-margin-bottom-medium">
+        Want us to know something? Leave a review
+      </h1>
+      </div>
+      <form method="post" action="/addreview" class="review-form">
+        <input placeholder="First Name" name="fNameReview" type="text" class="review-form__input" required>
+        <input placeholder="Last Name" name="lNameReview" type="text" class="review-form__input"  required>
+        <input placeholder="Professional Title" name="titleNameReview" type="text" class="review-form__input" required>
+        <textarea name="reviewText" placeholder="Your Message Here..." cols="30" rows="10" class="review-form__input"required></textarea>
+        <button class="button__btn" type="submit" name="button">Send Message</button>
+      </form>
+    </div>
+
+
+  </div>
+</header>
 
 <%- include("partials/footer")-%>

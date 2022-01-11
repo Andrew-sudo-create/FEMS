@@ -1,0 +1,17 @@
+.services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content{
+    background-color: $container-white;
+    width: 80%;
+    padding: 5rem;
+  }
+
+  &__heading-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

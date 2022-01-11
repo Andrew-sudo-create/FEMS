@@ -1,0 +1,22 @@
+.values{
+  &__card{
+    background-color: var(--color-secondary-text);
+    padding: 5rem ;
+    transition: all .2s;
+
+
+    &:hover{
+      transform: translateY(-1rem) scale(1.1);
+      cursor: pointer;
+    }
+
+    @include respond(small-desktop) {
+        padding: 3rem;
+    }
+  }
+
+  &__secondary-heading{
+    border-bottom: 2px solid var(--color-blue);
+    margin-bottom: 4rem;
+  }
+}

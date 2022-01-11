@@ -1,0 +1,28 @@
+.header{
+  background-image: url("../images/images-suggest-one.jpg");
+  height: 100vh;
+
+  @include parallax;
+}
+
+.values{
+  background-color: var(--color-white);
+}
+
+.services{
+  background-image: url("../images/services.jpg");
+  height: 70vh;
+
+  @include parallax;
+}
+
+.review{
+  background-color: var(--color-white);
+}
+
+.contact{
+  background-image: url("../images/footer.jpg");
+  height: 90vh;
+
+  @include parallax;
+}

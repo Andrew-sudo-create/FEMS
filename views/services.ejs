@@ -1,12 +1,15 @@
 <%- include("partials/header")-%>
 
-<div class="services-page container-fluid">
-  <div class="new-page-content container">
-    <div class="new-top container">
-      <p class="new-heading">Services That We Provide.</p>
-    </div>
-    <div class="new-body">
-      <ul class="service-list">
+
+<header class="header header--services">
+  <div class="header__content">
+    <div class="header__text-box">
+      <div class="header__box">
+      <h1 class="heading-primary u-margin-bottom-medium">
+        Services That We Provide.
+      </h1>
+      </div>
+      <ul class="services-list text-primary">
         <li>Site infrastructure assessments which become the basis of your maintenance roadmap.</li>
         <li>Estate Management(Residential Complexes/Buildings).</li>
         <li>Facility Management(Small & Medium sized office parks).</li>
@@ -21,12 +24,10 @@
         <li>Compilation of Emergancy Action Plans(EAP).</li>
         <li>Asset Registers</li>
       </ul>
-      <form action="/" class="button-form">
-        <button class="GTA" type="submit" name="button">Home</button>
-      </form>
-    </div>
+      </div>
+    <form action="/" class="button">
+      <button class="button__btn" type="submit" name="button">Home</button>
+    </form>
   </div>
-</div>
-
-
+</header>
 <%- include("partials/footer")-%>

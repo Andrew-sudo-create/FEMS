@@ -1,10 +1,19 @@
 <%- include("partials/header")-%>
 
-<div class="failure-page container-fluid">
-  <div class="new-page-content container">
-    <div class="render-heading container"><p>Failure!</p></div>
-      <p class="render-content">Oops! Something went wrong.</p>
+<header class="header header--about">
+  <div class="header__content">
+    <div class="header__text-box">
+      <div class="header__box">
+      <h1 class="heading-primary u-margin-bottom-medium">
+        Failure!
+      </h1>
+      </div>
+      <p class="text-primary">We have NOT recieved your message!</p>
+      <p class="text-primary">Please try again!</p>
+    </div>
+    <form action="/" class="button">
+      <button class="button__btn" type="submit" name="button">Home</button>
+    </form>
   </div>
-</div>
-
+</header>
 <%- include("partials/footer")-%>

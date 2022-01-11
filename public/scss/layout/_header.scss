@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    background-color: $container-white;
+    width: 80%;
+    padding: 3.5rem;
+    @include respond(phone) {
+      // width < 1200?
+      padding: 1rem;
+      width: 90%;
+    }
+  }
+
+  &__logo {
+    width: 20%;
+    float: left;
+    shape-outside: inset(0);
+    @include respond(small-desktop) {
+      // width < 1200?
+      display: none;
+    }
+  }
+
+  &--about {
+    background-image: url("../images/about.jpg") !important;
+    padding-top: 8rem;
+  }
+
+  &--services {
+    background-image: url("../images/services.jpg") !important;
+  }
+
+  &--TsandCs {
+    background-image: url("../images/terms.jpg") !important;
+  }
+
+  &--privacy {
+    background-image: url("../images/privacy.jpg")!important;
+  }
+
+  &--review {
+    background-image: url("../images/review.jpg")!important;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.privacy {
+  &__box {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 35rem;
+  }
+}
