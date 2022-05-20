@@ -3,16 +3,35 @@
   align-items: center;
   justify-content: center;
 
+
   &__content {
     background-color: $container-white;
     width: 80%;
     padding: 3.5rem;
+
     @include respond(phone) {
       // width < 1200?
       padding: 1rem;
       width: 90%;
     }
+    @include respond(small-desktop){
+      margin-top: 10rem;
+    }
+    @include respond(tab-land){
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 60rem;
+    }
+
   }
+  &__text-box{
+    // p:nth-last-child(3){
+    //   display: none;
+    //   @include respond(smaller-phone){
+    //     display:contents;
+    //   }
+    // }
+  };
 
   &__logo {
     width: 20%;

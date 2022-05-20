@@ -247,12 +247,26 @@ body {
   width: 80%;
   padding: 5rem;
 }
+@media only screen and (max-width: 75em) {
+  .services__content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 55rem;
+  }
+}
 .services__heading-box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+@media only screen and (max-width: 75em) {
+  .review__details {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 30rem;
+  }
+}
 .review__icon {
   fill: var(--color-blue);
   position: absolute;
@@ -329,6 +343,13 @@ body {
   width: 80%;
   height: 80%;
   padding: 0 5rem;
+}
+@media only screen and (max-width: 75em) {
+  .contact__content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 60rem;
+  }
 }
 @media only screen and (max-width: 62.5em) {
   .contact__content {
@@ -537,6 +558,18 @@ body {
     width: 90%;
   }
 }
+@media only screen and (max-width: 95em) {
+  .header__content {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .header__content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 60rem;
+  }
+}
 .header__logo {
   width: 20%;
   float: left;
@@ -694,6 +727,7 @@ body {
 @media only screen and (max-width: 43.75em) {
   .navigation__list {
     visibility: hidden;
+    width: 0;
   }
 }
 .navigation__logo {

@@ -29,7 +29,11 @@
     width: 80%;
     height: 80%;
     padding: 0 5rem;
-
+    @include respond(tab-land){
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 60rem;
+    }
 
     @include respond(small-tab-land) {
       height: 50%;

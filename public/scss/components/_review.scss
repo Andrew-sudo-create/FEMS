@@ -1,4 +1,11 @@
 .review{
+  &__details{
+    @include respond(tab-land){
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 30rem;
+    }
+  }
   &__icon{
     fill:var(--color-blue);
     position: absolute;

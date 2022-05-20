@@ -33,6 +33,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
+    @if $breakpoint == smaller-phone{
+      @media only screen and (max-width: 21.875em) { @content };
+    }
     @if $breakpoint == small-phone {
       @media only screen and (max-width: 25em) { @content };    //400px
     }
@@ -48,6 +51,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == tab-land {
         @media only screen and (max-width: 75em) { @content };    //1200px
     }
+
     @if $breakpoint == small-tab-land {
         @media only screen and (max-width: 62.5em) { @content };    //1000px
     }

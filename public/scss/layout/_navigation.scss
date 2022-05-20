@@ -8,6 +8,9 @@
   width: 100vw;
   border-bottom: 1px solid var(--color-primary-text);
 
+  @include respond(phone){
+
+  }
   &__checkbox {
     display: none;
   }
@@ -140,6 +143,7 @@
     flex: 1;
     @include respond(big-phone) {
       visibility: hidden;
+      width: 0;
     }
   }
 

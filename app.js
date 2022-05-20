@@ -112,9 +112,9 @@ const nodemailer = require("nodemailer");
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "mail.femsolutions.co.za",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    host: "mail.femsolutions.net",
+    port: 465,
+    secure: true, // true for 465, false for other ports
     auth: {
       user: process.env.NODE_USER,
       pass: process.env.NODE_PASS
@@ -126,8 +126,8 @@ const nodemailer = require("nodemailer");
 
   // send mail with defined transport object
   let mailOptions = {
-    from: '"Website" <webdev@femsolutions.co.za>', // sender address
-    to: "info@femsolutions.co.za", // list of receivers
+    from: '"Website" <master@femsolutions.net>', // sender address
+    to: "info@femsolutions.net", // list of receivers
     subject: "Contact Request From Website", // Subject line
     text: "Contact", // plain text body
     html: output // html body
